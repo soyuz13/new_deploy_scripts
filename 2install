@@ -1,0 +1,6 @@
+#!/bin/bash
+echo
+echo "**** НУЖНО УСТАНОВИТЬ PYTHON3.9, GIT и VIRTUALENV ****"
+echo "sudo apt-get install python3.9 git"
+echo "sudo python3.9 -m pip install virtualenv"
+echo
