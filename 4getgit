@@ -5,12 +5,12 @@ set -e
 if [[ $1 == "" ]]
 then
 	echo
-	echo "Нужен параметр: https-ссылку на проект репозитория, например https://github.com/soyuz13/Bot_aiogram.git"
+	echo "Нужен параметр: https-ссылку на проект репозитория, например https://github.com/****/Bot_aiogram.git"
 	echo
 	exit
 fi
 
-#url="https://github.com/soyuz13/Bot_aiogram.git"
+#url="https://github.com/****/Bot_aiogram.git"
 url=$1
 
 fullname=$(echo $url | awk 'BEGIN {FS="/"} {print $NF}')
