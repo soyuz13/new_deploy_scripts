@@ -13,7 +13,7 @@ chown $NEWUSER /home/$NEWUSER/.ssh/authorized_keys
 echo "**** SSH-ключи от root для доступа скопированы"
 
 MYIP=$(hostname -I)
-openssl req -newkey rsa:2048 -sha256 -nodes -keyout /home/$NEWUSER/MYPRIVATE.key -x509 -days 365 -out /home/$NEWUSER/MYPUBLIC.pem -subj "/C=RU/ST=Gorod/L=Raion/O=Company/CN=$MYIP"
+openssl req -newkey rsa:2048 -sha256 -nodes -keyout /home/$NEWUSER/private.key -x509 -days 365 -out /home/$NEWUSER/cert.pem -subj "/C=RU/ST=Gorod/L=Raion/O=Company/CN=$MYIP"
 echo "**** Сертификаты в корневой папке созданы для IP=$MYIP"
 
 echo $NEWUSER > newuser.txt
