@@ -40,7 +40,7 @@ python3.9 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
 
-mv $user_cat/MYPUBLIC.pem $user_cat/MYPRIVATE.key $user_cat/$name/
+mv $user_cat/cert.pem $user_cat/private.key $user_cat/$name/
 
 echo "Всё"
 
