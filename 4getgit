@@ -5,13 +5,17 @@ set -e
 if [[ $1 == "" ]]
 then
 	echo
-	echo "Нужен параметр: https-ссылку на проект репозитория, например https://github.com/****/Bot_aiogram.git"
+	read -e -p "Введите адрес репозитория (https://github...): " REP
+	#echo "Нужен параметр: https-ссылку на проект репозитория, например https://github.com/****/Bot_aiogram.git"
 	echo
-	exit
+	url=$REP
+	#exit
+else
+	url=$1
 fi
 
 #url="https://github.com/****/Bot_aiogram.git"
-url=$1
+#url=$1
 
 fullname=$(echo $url | awk 'BEGIN {FS="/"} {print $NF}')
 name=$(echo $fullname | awk 'BEGIN {FS="."} {print $1}')
