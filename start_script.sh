@@ -1,16 +1,29 @@
 #!/bin/bash
-
-echo !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  обновление системы
+echo
+echo !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  update and upgrade system
+echo
 apt-get -y update && apt-get -y upgrade
-echo !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  установка языка и локали
+echo
+echo !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  install language pack and C.UTF-8 locale 
+echo
 apt-get -y install language-pack-ru
 update-locale LANG=C.UTF-8
-echo !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  установка mc
+echo
+echo !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  install mc
+echo
 apt-get -y install mc
-echo !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  установка python3.9
+echo
+echo !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  install python3.9
+echo
 apt-get -y install python3.9
 #apt-get install git
-echo !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  установка pip
+echo
+echo !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  install pip
+echo
 apt-get -y install python3-pip
-echo !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  установка venv
+echo
+echo !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  install venv
+echo
 apt-get -y install python3.9-venv
+echo
+echo Logout and login for apply RU-language settings
