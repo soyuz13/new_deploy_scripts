@@ -1,4 +1,6 @@
 #!/bin/bash
+echo "CLONE_REPO"
+echo
 
 set -e
 
