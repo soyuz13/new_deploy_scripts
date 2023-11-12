@@ -14,8 +14,7 @@ else
 	url=$1
 fi
 
-#url="https://github.com/****/Bot_aiogram.git"
-#url=$1
+echo "В файле rep_address.txt найден адрес репозитория:" url
 
 fullname=$(echo $url | awk 'BEGIN {FS="/"} {print $NF}')
 name=$(echo $fullname | awk 'BEGIN {FS="."} {print $1}')
