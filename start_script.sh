@@ -26,4 +26,4 @@ echo !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  install venv
 echo
 apt-get -y install python3.9-venv
 echo
-echo Logout and login for apply RU-language settings
+echo !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  Logout and login for apply RU-language settings
