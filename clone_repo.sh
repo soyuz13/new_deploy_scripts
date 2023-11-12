@@ -41,6 +41,10 @@ user_cat=/home/$USER
 cd $user_cat
 git clone $url
 cd $user_cat/$name
+
+#cat /dev/null > bot_directory.txt
+echo $(pwd) > $current_cat/bot_directory.txt
+
 python3.9 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
