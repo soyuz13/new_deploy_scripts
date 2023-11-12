@@ -1,5 +1,5 @@
 #!/bin/bash
-read -e -p "**** Введите имя новго пользователя: " NEWUSER
+read -e -p "**** Введите имя нового пользователя: " NEWUSER
 
 cat /dev/null > newuser.txt
 set -e
