@@ -27,3 +27,7 @@ echo
 apt-get -y install python3.9-venv
 echo
 echo !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  Logout and login for apply RU-language settings
+echo
+exec ./show_versions.sh
+exec ./create_user.sh
+exec ./clone_repo.sh
