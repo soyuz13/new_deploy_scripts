@@ -1,4 +1,7 @@
 #!/bin/bash
+echo "CREATE_USER"
+echo
+
 read -e -p "**** Введите имя нового пользователя: " NEWUSER
 
 cat /dev/null > newuser.txt
